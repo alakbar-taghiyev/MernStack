@@ -1,0 +1,179 @@
+.main_section {
+    padding: 20px 0;
+    background-color: #232526;
+}
+
+.inside_container {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 1200px;
+}
+
+aside {
+    flex: 1 1 200px;
+}
+
+.avatar,
+.search_bar,
+.pages,
+.tags {
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-top: 3rem;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.avatar img {
+    width: 8rem;
+    border-radius: 100%;
+}
+
+.avatar h1 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.avatar p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.avatar ul {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+
+.avatar ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 2rem;
+    background: rgba(0, 0, 0, 0.07);
+    border-radius: 100%;
+    font-size: .875rem;
+}
+
+.search_bar {
+    position: relative;
+    padding: 1.5rem;
+}
+
+.search_bar input[type = text] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: none;
+    outline: none;
+    padding: 0 .5rem 0 1rem;
+    height: 3rem;
+    font-size: 1rem;
+    transition: 0.2s ease-in;
+}
+
+.search_bar input:focus {
+    font-size: 1.1rem;
+}
+
+.search_bar input[type = button] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    outline: none;
+    width: 25%;
+    height: 3rem;
+    background: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDU2Ljk2NiA1Ni45NjYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDU2Ljk2NiA1Ni45NjY7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KPHBhdGggZD0iTTU1LjE0Niw1MS44ODdMNDEuNTg4LDM3Ljc4NmMzLjQ4Ni00LjE0NCw1LjM5Ni05LjM1OCw1LjM5Ni0xNC43ODZjMC0xMi42ODItMTAuMzE4LTIzLTIzLTIzcy0yMywxMC4zMTgtMjMsMjMgIHMxMC4zMTgsMjMsMjMsMjNjNC43NjEsMCw5LjI5OC0xLjQzNiwxMy4xNzctNC4xNjJsMTMuNjYxLDE0LjIwOGMwLjU3MSwwLjU5MywxLjMzOSwwLjkyLDIuMTYyLDAuOTIgIGMwLjc3OSwwLDEuNTE4LTAuMjk3LDIuMDc5LTAuODM3QzU2LjI1NSw1NC45ODIsNTYuMjkzLDUzLjA4LDU1LjE0Niw1MS44ODd6IE0yMy45ODQsNmM5LjM3NCwwLDE3LDcuNjI2LDE3LDE3cy03LjYyNiwxNy0xNywxNyAgcy0xNy03LjYyNi0xNy0xN1MxNC42MSw2LDIzLjk4NCw2eiIgZmlsbD0iI0ZGRkZGRiIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K) no-repeat center center;
+    cursor: pointer;
+    opacity: .5;
+    background-size: 0.875rem;
+}
+
+.pages h1,
+.tags h1 {
+    color: #fff;
+    letter-spacing: .0625rem;
+    font-size: 1rem;
+    line-height: 3.75rem;
+    padding: 0 1.5rem;
+    border-bottom: 1px solid #272727;
+}
+
+.pages ul {
+    padding: 1.5rem;
+    font-size: .875rem;
+}
+
+.pages ul li {
+    margin-bottom: 0.5rem;
+}
+
+.pages ul li a {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.tags_container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    font-size: .875rem;
+}
+
+.tags_item {
+    padding: 0.25rem 0.5rem;
+    background-color: rgba(255,255,255,0.09);
+    color: #fff;
+    margin: 4px;
+}
+
+/*------------- RIGHT SIDE -------------*/
+main {
+    flex: 4 1 500px;
+}
+
+.post_item {
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.post_item h1 {
+    line-height: 1;
+    font-size: 2.25rem;
+    margin: 0 0 0.5rem;
+    font-weight: 700;
+    color: #0064c4;
+}
+
+.post_item span {
+    display: block;
+    font-size: 0.75rem;
+    color: #666;
+    text-transform: uppercase;
+    margin: 0.5rem 0 2rem 0;
+    font-size: 0.75rem;
+    color: #666;
+    text-transform: uppercase;
+}
+
+.post_item p {
+    line-height: 1.6;
+}
